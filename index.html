@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Find Recipes for your Leftover Ingredients</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous"/>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<header>
+<h2 class = "logo">Recipes4U</h2>
+    <nav class = "navigation">
+        <a href = "/index.html">Home</a> 
+        <!-- <a href = "/login.html", class="btnLogin-popup">Login</a> -->
+    </nav>
+</header>
+<body>
+    <div class = "container">
+        <div class = "meal-wrapper">
+            <div class = "meal-search">
+                <h2 class = "title">Find Recipes for your Leftover Ingredients</h2>
+                <div class = "meal-search-box">
+                    <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+                    <!-- <select id="category-select">
+                        <option value="">Select Category</option>
+                        <option value="Beef">Beef</option>
+                        <option value="Chicken">Chicken</option>
+                        <option value="Goat">Goat</option>
+                        <option value="Lamb">Lamb</option>
+                        <option value="Pork">Pork</option>
+                        <option value="Seafood">Seafood</option>
+                        <option value="Vegan">Vegan</option>
+                        <option value="Vegetarian">Vegetarian</option>
+                        <option value="Pasta">Pasta</option>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Starter">Starter</option>
+                        <option value="Side">Side</option>
+                        <option value="Dessert">Dessert</option>
+                        <option value="Miscellaneous">Miscellaneous</option> 
+                    </select> -->
+                    <button type = "submit" class = "search-btn btn" id = "search-btn">
+                        <i class = "fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class = "meal-result">
+                <h2 class = "title">Search results:</h2>
+                <div id = "meal"></div>
+            </div>
+
+            <div class = "meal-details">
+                <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
+                <i class = "fas fa-times"></i>
+                </button>
+            <div class = "meal-details-content"></div>
+            </div>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
